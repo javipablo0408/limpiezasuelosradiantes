@@ -13,7 +13,7 @@
       />
     </a>
 
-    <nav class="justify-self-center">
+    <nav class="hidden justify-self-center md:block">
       <div class="hidden items-center gap-6 text-xs font-semibold text-slate-700 md:flex">
         <a href="/domotica" class="hover:text-slate-900">
           Domótica
@@ -27,7 +27,7 @@
       </div>
     </nav>
 
-    <div class="justify-self-end">
+    <div class="hidden justify-self-end md:block">
       <a
         href="/solicitar-presupuesto"
         class="inline-flex items-center justify-center rounded-lg bg-[var(--color-brand-orange-600)] px-3 py-2 text-xs font-semibold text-white shadow-sm hover:bg-[var(--color-brand-orange-500)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-orange-500)] focus:ring-offset-2"
@@ -35,6 +35,26 @@
         Solicitar Presupuesto
       </a>
     </div>
+
+    <details class="relative justify-self-end md:hidden">
+      <summary class="inline-flex cursor-pointer list-none items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-800 shadow-sm hover:bg-slate-50">
+        Menú
+      </summary>
+      <div class="absolute right-0 mt-2 w-56 rounded-xl border border-slate-200 bg-white p-2 shadow-lg">
+        <a href="/domotica" class="block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">
+          Domótica
+        </a>
+        <a href="/instalacion-suelo-radiante" class="mt-1 block rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900">
+          Suelo radiante
+        </a>
+        <a
+          href="/solicitar-presupuesto"
+          class="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-[var(--color-brand-orange-600)] px-3 py-2 text-xs font-semibold text-white shadow-sm hover:bg-[var(--color-brand-orange-500)]"
+        >
+          Solicitar Presupuesto
+        </a>
+      </div>
+    </details>
   </div>
 </header>
 
