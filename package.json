@@ -8,12 +8,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "start": "node dist/server/entry.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^10.0.3",
     "@astrojs/react": "^5.0.1",
-    "@astrojs/vercel": "^10.0.2",
     "@react-pdf/renderer": "^4.3.2",
     "@tailwindcss/vite": "^4.2.2",
     "@types/react": "^19.2.14",

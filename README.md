@@ -4,7 +4,7 @@ Landing + calculadora técnica (Astro SSR + Tailwind) para generar presupuesto e
 
 ## Stack
 
-- Astro SSR (adaptador Vercel)
+- Astro SSR (adaptador Node standalone)
 - Tailwind CSS
 - Astro Islands (React) para formulario por pasos
 - PDF en servidor: `@react-pdf/renderer`
@@ -27,14 +27,36 @@ npm run dev
 ## Endpoint
 
 - `POST /api/presupuesto`
-  - body JSON (ejemplo):
+  - body `multipart/form-data` (recomendado, permite fotos) o JSON
+  - campos mínimos:
+    - `m2`
+    - `ultimaLimpieza`
+    - `antiguedadInstalacion`
+    - `colectores`
+    - `provincia`
+    - `depositoInercia` (`si`/`no`) y `depositoLitros` cuando aplique
+    - `contacto_nombre`, `contacto_email`, `contacto_telefono` (opcional)
+    - `fotos` (opcional, múltiples)
+
+## Producción en VPS
+
+```bash
+npm ci
+npm run build
+npm run start
+```
+
+La app SSR arranca con `node dist/server/entry.mjs` (script `start`).
 
 ```json
 {
   "m2": 120,
-  "antiguedad": "8-12",
+  "ultimaLimpieza": "7+",
+  "antiguedadInstalacion": "8-12",
   "colectores": 2,
   "provincia": "Madrid",
+  "depositoInercia": "si",
+  "depositoLitros": 50,
   "contacto": { "email": "cliente@correo.com", "nombre": "Cliente", "telefono": "+34 600 000 000" }
 }
 ```
