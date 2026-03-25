@@ -1,0 +1,68 @@
+---
+const steps = [
+  {
+    n: '01',
+    title: 'Diagnóstico y protección',
+    desc: 'Revisión de colectores, caudales y estado del circuito. Aislamos elementos sensibles y preparamos captación de partículas.'
+  },
+  {
+    n: '02',
+    title: 'Limpieza mecánica por impulsos',
+    desc: 'Lavado por circuitos con máquina de impulsos/caudal para desprender lodos, óxidos y sedimentos sin dañar la instalación.'
+  },
+  {
+    n: '03',
+    title: 'Tratamiento químico controlado',
+    desc: 'Aplicación de limpiador compatible con suelo radiante para solubilizar magnetita y biofilm. Neutralización y enjuague.'
+  },
+  {
+    n: '04',
+    title: 'Equilibrado e informe',
+    desc: 'Purgado, ajuste de caudales y verificación final. Entrega de PDF con desglose y recomendaciones (inhibidor/filtro magnético).'
+  }
+];
+---
+
+<section id="proceso" class="scroll-mt-24 bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-14">
+    <div class="max-w-2xl">
+      <h2 class="text-balance text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+        Proceso de limpieza/desfangado (paso a paso)
+      </h2>
+      <p class="mt-3 text-pretty text-slate-600">
+        En suelo radiante, el objetivo es recuperar caudal y transferencia térmica, minimizando riesgos y dejando el sistema protegido.
+      </p>
+    </div>
+
+    <ol class="mt-10 grid gap-4 lg:grid-cols-4">
+      {steps.map((s) => (
+        <li class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+          <div class="flex items-center gap-3">
+            <div class="rounded-full bg-[var(--color-brand-blue-700)] px-3 py-1 text-xs font-semibold tracking-wide text-white">
+              {s.n}
+            </div>
+            <div class="h-px flex-1 bg-slate-200" aria-hidden="true" />
+          </div>
+          <h3 class="mt-4 font-semibold text-slate-900">{s.title}</h3>
+          <p class="mt-2 text-sm text-slate-600">{s.desc}</p>
+        </li>
+      ))}
+    </ol>
+
+    <div class="mt-10 grid gap-4 rounded-2xl border border-slate-200 bg-white p-6 md:grid-cols-3">
+      <div class="rounded-xl bg-[var(--color-brand-blue-50)] p-4">
+        <div class="text-sm font-semibold text-slate-900">Riesgo controlado</div>
+        <div class="mt-1 text-sm text-slate-700">Compatibilidad química y protocolos de enjuague para evitar daños.</div>
+      </div>
+      <div class="rounded-xl bg-[var(--color-brand-blue-50)] p-4">
+        <div class="text-sm font-semibold text-slate-900">Enfoque por circuitos</div>
+        <div class="mt-1 text-sm text-slate-700">Limpieza dirigida a colectores y zonas con menor caudal.</div>
+      </div>
+      <div class="rounded-xl bg-[var(--color-brand-blue-50)] p-4">
+        <div class="text-sm font-semibold text-slate-900">Informe en PDF</div>
+        <div class="mt-1 text-sm text-slate-700">Desglose de servicio y recomendaciones para mantener rendimiento.</div>
+      </div>
+    </div>
+  </div>
+</section>
+

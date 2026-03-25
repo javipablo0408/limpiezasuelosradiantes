@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/site/Header.astro';
+import Footer from '../components/site/Footer.astro';
+import PresupuestoForm from '../components/islands/PresupuestoForm';
+---
+
+<BaseLayout
+  title="Solicitar presupuesto | Limpieza suelo radiante"
+  description="Completa el formulario para recibir un presupuesto técnico en PDF en menos de 24h."
+  canonicalPath="/solicitar-presupuesto"
+>
+  <Header />
+
+  <main class="bg-white">
+    <section class="mx-auto max-w-6xl px-4 py-10 sm:py-12">
+      <div class="grid items-start gap-10 lg:grid-cols-[1fr_420px]">
+        <div class="max-w-xl">
+          <div class="text-xs font-semibold tracking-wide text-slate-500">PRESUPUESTO TÉCNICO</div>
+          <h1 class="mt-3 text-balance text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+            <span class="text-[var(--color-brand-orange-600)]">Precisión</span> Técnica
+            <br />
+            para su sistema.
+          </h1>
+          <p class="mt-4 text-pretty text-sm leading-relaxed text-slate-600">
+            Complete el siguiente formulario para recibir un presupuesto detallado en base a sus necesidades de
+            climatización o mantenimiento en un plazo de 24 horas.
+          </p>
+        </div>
+
+        <div class="hidden rounded-3xl bg-slate-50 p-6 lg:block">
+          <div class="aspect-[4/3] w-full rounded-2xl border border-slate-200 bg-white shadow-sm"></div>
+          <div class="mt-4 flex justify-end">
+            <div class="grid size-12 place-items-center rounded-2xl bg-[var(--color-brand-blue-700)] text-white shadow-sm">
+              👤
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 pb-14">
+        <PresupuestoForm client:load />
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+

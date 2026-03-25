@@ -1,3 +1,46 @@
+# limpiezasuelosradiantes.com
+
+Landing + calculadora técnica (Astro SSR + Tailwind) para generar presupuesto en **PDF** y enviarlo por email.
+
+## Stack
+
+- Astro SSR (adaptador Vercel)
+- Tailwind CSS
+- Astro Islands (React) para formulario por pasos
+- PDF en servidor: `@react-pdf/renderer`
+- Email: Resend
+
+## Variables de entorno
+
+Copia `.env.example` a `.env` y completa:
+
+- `RESEND_API_KEY`
+- `FROM_EMAIL` (dominio verificado en Resend)
+- `ADMIN_EMAIL`
+
+## Desarrollo
+
+```bash
+npm run dev
+```
+
+## Endpoint
+
+- `POST /api/presupuesto`
+  - body JSON (ejemplo):
+
+```json
+{
+  "m2": 120,
+  "antiguedad": "8-12",
+  "colectores": 2,
+  "provincia": "Madrid",
+  "contacto": { "email": "cliente@correo.com", "nombre": "Cliente", "telefono": "+34 600 000 000" }
+}
+```
+
+Devuelve el PDF (download) y lo envía por email al cliente y al administrador.
+
 # Astro Starter Kit: Minimal
 
 ```sh
