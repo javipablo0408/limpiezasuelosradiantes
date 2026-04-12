@@ -62,7 +62,7 @@ export async function sendDomoticaEmails(args: {
       to: adminEmail,
       subject: `ADMIN · ${subject}`,
       html: adminHtml,
-      reply_to: input.email
+      replyTo: input.email
     }),
     resend.emails.send({
       from: fromEmail,

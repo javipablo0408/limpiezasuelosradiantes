@@ -1,0 +1,329 @@
+/* Réplica fiel de src/pages/index.astro (commit 4e41e18) */
+export function AstroHomeMain() {
+  return (
+<main>
+    {/* HERO (como diseño) */}
+    <section className="bg-slate-50">
+      <div className="relative left-1/2 w-screen -translate-x-1/2 px-0 pt-0 pb-12 sm:pb-16">
+        <div className="overflow-hidden border border-slate-200 bg-slate-900 shadow-lg">
+          <div className="relative">
+            <div className="absolute inset-0 bg-[url('/hero.png')] bg-cover bg-center opacity-85" aria-hidden="true" />
+            <div
+              className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,23,0.95),rgba(2,6,23,0.72),rgba(2,6,23,0.15))]"
+              aria-hidden="true"
+            />
+            <div className="relative px-6 py-16 sm:px-10 sm:py-24">
+              <div className="mx-auto max-w-2xl text-center">
+                <div className="inline-flex rounded-full bg-white/10 px-4 py-1.5 text-[11px] font-semibold tracking-wide text-white/85">
+                  EFICIENCIA TÉRMICA
+                </div>
+                <h1 className="mt-6 text-balance text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                  Limpieza profesional de
+                  <br />suelo radiante
+                </h1>
+                <p className="mt-6 text-pretty text-base leading-relaxed text-white/80">
+                  ¿Tu suelo radiante muestra signos de pérdida de eficiencia o necesita mantenimiento? Optimizamos el rendimiento de tu sistema para un funcionamiento eficiente y duradero.
+                </p>
+                <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-center">
+                  <a
+                    href="/solicitar-presupuesto"
+                    className="inline-flex items-center justify-center rounded-full bg-[var(--color-brand-orange-600)] px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-white shadow-sm hover:bg-[var(--color-brand-orange-500)]"
+                  >
+                    PIDE PRESUPUESTO →
+                  </a>
+                  <a
+                  href="tel:+34689571381"
+                    className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/5 px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-white hover:bg-white/10"
+                  >
+                    LLAMAR AHORA
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* INTRO + TARJETAS */}
+    <section id="servicios" className="scroll-mt-24 bg-white">
+      <div className="mx-auto max-w-6xl px-4 py-14">
+        <div className="max-w-3xl">
+          <h2 className="text-balance text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+            Limpieza de suelo radiante: mejora la eficiencia y durabilidad de tu sistema
+          </h2>
+          <p className="mt-3 text-pretty text-slate-600">
+            Nuestro proceso de limpieza de suelo radiante se adapta a las necesidades específicas de cada instalación, combinando procedimientos precisos y productos de alta calidad.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-5 md:grid-cols-2 md:items-stretch md:gap-6">
+          <article className="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">Limpieza de tratamiento preventivo</div>
+            <p className="mt-2 text-sm text-slate-600">
+              (la recomendada, normalmente, para instalaciones de menos de 5 años de antigüedad o que se les ha hecho un tratamiento no hace más de 5 años)
+            </p>
+            <div className="mt-4 space-y-2 text-sm text-slate-700">
+              <p>
+                1ª Visita de alrededor de 30 minutos para comprobar estado del agua e inspeccionar la instalación antes de introducir los líquidos limpiadores que se dejarán actuar, con la calefacción puesta durante 15 o 20 días, en función de las necesidades.
+              </p>
+              <p>
+                2ª Visita, con una duración aproximada de dos horas por cada 100m2, en la que se realizará propiamente la limpieza del circuito, con diferentes máquinas; unas para desprender la suciedad incrustada y otras de gran caudal para hacer circular el agua en ambos sentidos y extraemos con un filtro magnético todas las partículas en suspensión.
+              </p>
+              <ul className="mt-2 space-y-1">
+                <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Limpiamos colectores, comprobamos y engrasamos válvulas para su correcto funcionamiento</li>
+                <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Comprobamos con cámara térmica que los circuitos calientan.</li>
+                <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Una vez que el circuito esté limpio introducimos los líquidos protectores y comprobamos que los parámetros; turbidez, ph y conductividad del agua, son los adecuados.</li>
+              </ul>
+              <p className="text-xs text-slate-500">
+                * Nuestros presupuestos incluyen informe de la actuación y visita de revisión gratuita transcurrido un año.
+              </p>
+            </div>
+          </article>
+
+          <article className="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">Limpieza con prelavado</div>
+            <p className="mt-2 text-sm text-slate-600">
+              (para instalaciones muy sucias o sin adecuado mantenimiento)
+            </p>
+            <div className="mt-4 space-y-2 text-sm text-slate-700">
+              <p>
+                1ª En los casos en que está muy sucio el circuito hay que hacer un lavado de la instalación con máquinas, previo a la introducción del detergente ya que el exceso de suciedad puede neutralizar el producto químico de limpieza.
+              </p>
+              <p>
+                La duración de este prelavado puede llegar a ser todo el día dependiendo del estado de la instalación y sus dimensiones. El promedio es de aproximadamente de 1h y ½ por cada 100m2.
+              </p>
+              <p>
+                2ª Visita, con una duración aproximada de dos horas por cada 100m2, en la que se realizará propiamente la limpieza del circuito, con diferentes máquinas; unas para desprender la suciedad incrustada y otras de gran caudal para hacer circular el agua en ambos sentidos y extraemos con un filtro magnético todas las partículas en suspensión.
+              </p>
+              <ul className="mt-2 space-y-1">
+                <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Limpiamos colectores, comprobamos y engrasamos válvulas para su correcto funcionamiento</li>
+                <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Comprobamos con cámara térmica que los circuitos calientan.</li>
+                <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Una vez que el circuito esté limpio introducimos los líquidos protectores y comprobamos que los parámetros; turbidez, ph y conductividad del agua, son los adecuados.</li>
+              </ul>
+              <p className="text-xs text-slate-500">
+                * Nuestros presupuestos incluyen informe de la actuación y visita de revisión gratuita transcurrido un año.
+              </p>
+            </div>
+          </article>
+
+          <article className="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:col-span-2">
+            <div className="text-sm font-semibold text-slate-900">LIMPIEZA INTENSIVA EN UN DÍA</div>
+            <p className="mt-2 text-sm text-slate-600">
+              Este tipo solo se realiza en casos excepcionales por ejemplo cuando:
+            </p>
+            <ul className="mt-3 space-y-1 text-sm text-slate-700">
+              <li>Hay que sustituir caldera o aerotermia y se quiere dejar limpia, de lodos y magnetita, la instalación de calefacción o suelo radiante, de forma urgente.</li>
+              <li>No funciona la caldera y hay que utilizar un filtro con resistencia para calentar el agua y extraer lodos y partículas metálicas.</li>
+              <li>Hay una obturación por falta de mantenimiento y acumulación de residuos; bacterianos o metálicos por corrosión.</li>
+              <li>Instalaciones que se encuentran lejos de nuestra área de trabajo.</li>
+              <li>Otros…</li>
+            </ul>
+
+            <div className="mt-4 rounded-xl bg-slate-50 p-4 text-sm text-slate-700">
+              <div className="font-semibold text-slate-900">Tipo de actuación</div>
+              <ol className="mt-1 list-decimal space-y-1 pl-5">
+                <li>Prelavamos el circuito para extraer la suciedad acumulada para que actúen mejor los limpiadores.</li>
+                <li>
+                  Comprobamos el estado del agua (ph, turbidez, conductividad, etc…), y de la instalación, e introducimos los líquidos de limpieza rápida. Hacemos circular el agua con la calefacción puesta. (incluso utilizando filtro y resistencia externos para mejorar el proceso)
+                </li>
+                <li>
+                  Realizamos la limpieza del circuito, con diferentes máquinas; unas para desprender la suciedad incrustada y otras, de gran caudal, para hacer circular el agua en ambos sentidos y arrastrar todas las partículas en suspensión que atraparemos con filtro magnético y extraeremos.
+                </li>
+                <li>
+                  Limpiamos colectores, comprobamos y engrasamos válvulas para su correcto funcionamiento y comprobamos con cámara térmica que los circuitos calientan.
+                </li>
+                <li>
+                  Una vez que el circuito esté limpio introducimos los líquidos protectores y comprobamos que los parámetros; turbidez, ph y conductividad del agua, son los adecuados.
+                </li>
+              </ol>
+              <p className="mt-3 text-xs text-slate-500">
+                * Nuestros presupuestos incluyen informe de la actuación y visita de revisión gratuita transcurrido un año.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    {/* PROBLEMAS COMUNES */}
+    <section className="bg-slate-50">
+      <div className="mx-auto max-w-6xl px-4 py-14">
+        <div className="text-center">
+          <h3 className="text-balance text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">
+            Problemas Comunes en Suelos Radiantes
+          </h3>
+          <p className="mx-auto mt-3 max-w-3xl text-pretty text-sm text-slate-600">
+            El sistema de suelo radiante puede experimentar diversos inconvenientes si no se efectúa un mantenimiento del suelo radiante adecuado.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:auto-rows-fr">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">Pérdida de Eficiencia</div>
+            <div className="mt-2 text-sm text-slate-600">
+              Con el tiempo, los suelos radiantes pueden perder eficacia, lo que se traduce en un calentamiento desigual de las estancias, generando una sensación de incomodidad.
+            </div>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">Acumulación de Sedimentos y Lodos</div>
+            <div className="mt-2 text-sm text-slate-600">
+              Estos depósitos pueden afectar el circuito, impidiendo el flujo óptimo del agua y forzando al sistema a trabajar más, incrementando el consumo energético.
+            </div>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">Impacto en el Flujo de Agua</div>
+            <div className="mt-2 text-sm text-slate-600">
+              Un flujo de agua obstaculizado puede derivar en un mal rendimiento del sistema, dificultando la distribución uniforme del calor.
+            </div>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">Corrosión y Daños a Largo Plazo</div>
+            <div className="mt-2 text-sm text-slate-600">
+              La falta de un adecuado mantenimiento favorece la corrosión en las tuberías, lo que puede acortar la vida útil del sistema considerablemente.
+            </div>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">Aumento del Consumo Energético</div>
+            <div className="mt-2 text-sm text-slate-600">
+              Un sistema sucio y obstruido requiere más energía para funcionar adecuadamente, lo que se traduce en un aumento de las facturas de calefacción.
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm lg:col-start-3 lg:row-start-2 lg:flex lg:flex-col lg:justify-center">
+            <div className="text-base font-semibold text-slate-900">¿Notas alguno de estos problemas?</div>
+            <div className="mx-auto mt-2 max-w-3xl text-sm text-slate-600">
+              No esperes a que el problema empeore. Nuestro servicio de limpieza profesional puede ayudarte a restablecer la eficiencia de tu sistema.
+            </div>
+            <div className="mt-6 flex justify-center">
+              <a
+                href="/solicitar-presupuesto"
+                className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+              >
+                Solicitar diagnóstico
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 text-center">
+          <div className="text-sm font-semibold text-slate-900">Trabajamos con las mejores marcas</div>
+          <div className="mt-5 w-full rounded-2xl border border-slate-200 bg-white px-4 py-4 shadow-sm sm:px-6 sm:py-6">
+            <img
+              src="/marcas.png"
+              alt="Marcas con las que trabajamos: Fernox, Floixem y Kamco"
+              className="mx-auto h-16 w-full object-contain sm:h-20 lg:h-24"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    {/* BENEFICIOS + IMAGEN */}
+    <section id="beneficios" className="scroll-mt-24 bg-white">
+      <div className="mx-auto max-w-6xl px-4 py-14">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <h3 className="text-balance text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl">
+              Beneficios de un suelo radiante limpio
+            </h3>
+            <div className="mt-6 grid gap-5">
+              <div className="flex gap-3">
+                <div className="mt-0.5 size-2.5 rounded-full bg-[var(--color-brand-orange-600)]" aria-hidden="true" />
+                <div>
+                  <div className="text-sm font-semibold text-slate-900">Mejor distribución del calor</div>
+                  <div className="mt-1 text-sm text-slate-600">Disfruta de una temperatura uniforme en todas las habitaciones de tu hogar sin zonas frías o calientes.</div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="mt-0.5 size-2.5 rounded-full bg-[var(--color-brand-blue-700)]" aria-hidden="true" />
+                <div>
+                  <div className="text-sm font-semibold text-slate-900">Reducción del consumo energético</div>
+                  <div className="mt-1 text-sm text-slate-600">Ahorra en tus facturas de calefacción gracias a un sistema que funciona de manera eficiente y sin obstrucciones.</div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="mt-0.5 size-2.5 rounded-full bg-[var(--color-brand-orange-600)]" aria-hidden="true" />
+                <div>
+                  <div className="text-sm font-semibold text-slate-900">Mayor vida útil del sistema</div>
+                  <div className="mt-1 text-sm text-slate-600">Prolonga la durabilidad de tu instalación y evita costosas reparaciones o sustituciones prematuras.</div>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="mt-0.5 size-2.5 rounded-full bg-[var(--color-brand-blue-700)]" aria-hidden="true" />
+                <div>
+                  <div className="text-sm font-semibold text-slate-900">Funcionamiento silencioso y eficaz</div>
+                  <div className="mt-1 text-sm text-slate-600">Elimina ruidos y vibraciones causados por sedimentos y aire en el sistema, mejorando el confort de tu hogar.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-slate-100">
+            <div className="aspect-[4/3] w-full bg-[url('/beneficios.png')] bg-cover bg-center" aria-hidden="true" />
+            <div className="absolute bottom-4 left-4 rounded-2xl bg-[var(--color-brand-orange-600)] px-4 py-3 text-white shadow-sm">
+              <div className="text-xs font-semibold opacity-90">-25%</div>
+              <div className="text-sm font-semibold">en diagnóstico</div>
+              <div className="text-xs opacity-90">por tiempo limitado</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+          <div className="inline-flex rounded-full bg-[var(--color-brand-orange-600)] px-4 py-1.5 text-[11px] font-extrabold uppercase tracking-wide text-white">
+            RECOMENDADO
+          </div>
+          <h4 className="mt-4 text-balance text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl">
+            Mantenimiento preventivo recomendado
+          </h4>
+          <ul className="mt-6 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
+            <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Revisión completa del sistema cada 2-3 años para instalaciones domésticas</li>
+            <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Limpieza profesional de circuitos para eliminar sedimentos y lodos</li>
+            <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Control de la calidad del agua (pH, conductividad)</li>
+            <li className="flex gap-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Verificación del funcionamiento de bombas y válvulas</li>
+            <li className="flex gap-2 sm:col-span-2"><span className="text-[var(--color-brand-blue-700)]" aria-hidden="true">-</span> Adición de líquidos protectores anticorrosión</li>
+          </ul>
+          <div className="mt-8 flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+            <div className="text-sm text-slate-700">
+              <div className="font-semibold text-slate-900">Contacta con nosotros para un diagnóstico personalizado</div>
+              <div className="mt-1 text-slate-600">Presupuesto sin compromiso</div>
+            </div>
+            <a
+              href="/solicitar-presupuesto"
+              className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+            >
+              Solicita información
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA FINAL */}
+    <section id="nosotros" className="scroll-mt-24 bg-[var(--color-brand-blue-900)]">
+      <div className="mx-auto max-w-6xl px-4 py-14">
+        <div className="mx-auto max-w-3xl text-center text-white">
+          <h3 className="text-balance text-2xl font-semibold tracking-tight sm:text-3xl">
+            ¿Eres técnico especializado en limpiezas de suelo radiante?
+          </h3>
+          <p className="mt-4 text-pretty text-sm text-slate-200 sm:text-base">
+            En T&VSERVICIOS buscamos profesionales de confianza para unirse a nuestra red.
+            <br /> Rellena el formulario y nos pondremos en contacto contigo.
+          </p>
+          <div className="mt-7 flex justify-center">
+            <a
+              href="/red-instaladores"
+              className="inline-flex items-center justify-center rounded-full bg-[var(--color-brand-orange-600)] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[var(--color-brand-orange-500)]"
+            >
+              Únete a nuestra red de confianza
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  );
+}

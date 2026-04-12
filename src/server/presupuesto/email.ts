@@ -83,7 +83,7 @@ export async function sendPresupuestoEmails(args: {
       subject: `ADMIN · ${subject}`,
       html: adminHtml,
       attachments: [attachment],
-      reply_to: input.contacto.email
+      replyTo: input.contacto.email
     })
   ]);
 }

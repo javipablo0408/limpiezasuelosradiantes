@@ -17,7 +17,7 @@ export type PresupuestoResult = {
 };
 
 function roundToEur(value: number) {
-  return Math.round(value);
+  return Math.round(value * 100) / 100;
 }
 
 function isMadrid(provincia: string) {

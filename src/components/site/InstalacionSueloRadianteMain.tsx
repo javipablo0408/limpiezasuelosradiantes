@@ -1,0 +1,264 @@
+export function InstalacionSueloRadianteMain() {
+  return (
+<main className="bg-white">
+    <section className="relative overflow-hidden bg-slate-50">
+      <div className="absolute inset-0 bg-slate-900">
+        <div
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,6,23,0.95),rgba(2,6,23,0.65),rgba(2,6,23,0.25))]"
+          aria-hidden="true"
+        />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl px-4 py-12 sm:py-16">
+        <div className="max-w-3xl">
+          <div className="inline-flex rounded-full bg-white/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-white/80">
+            Expertos en instalación de suelo radiante en Madrid
+          </div>
+          <h1 className="mt-6 text-balance text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+            El máximo confort llega desde el suelo.
+          </h1>
+
+          <p className="mt-4 text-pretty text-sm leading-relaxed text-white/80 sm:text-base">
+            ¿Cansado de los radiadores que ocupan espacio y calientan mal? ¿Sientes corrientes de aire frío o tienes los pies
+            helados en invierno?
+          </p>
+
+          <p className="mt-5 text-pretty text-sm leading-relaxed text-white/80 sm:text-base">
+            En T&V Servicios y Complementos no solo instalamos tubos; diseñamos sistemas de bienestar. Somos especialistas
+            en suelo radiante y refrescante en Madrid y alrededores, combinando la fontanería técnica con la inteligencia
+            informática para que tu casa mantenga la temperatura perfecta con el mínimo consumo.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <a
+              href="/solicitar-presupuesto"
+              className="inline-flex items-center justify-center rounded-full bg-[var(--color-brand-orange-600)] px-7 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[var(--color-brand-orange-500)]"
+            >
+              SOLICITAR PRESUPUESTO GRATUITO
+            </a>
+            <a
+              href="#faq"
+              className="inline-flex items-center justify-center rounded-full border border-white/25 bg-white/5 px-7 py-3 text-sm font-semibold text-white hover:bg-white/10"
+            >
+              Ver preguntas frecuentes
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+      <div className="grid gap-10 lg:grid-cols-2">
+        <div>
+          <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
+            Transforma tu hogar con el sistema de calefacción más avanzado
+          </h2>
+          <p className="mt-4 text-pretty text-sm leading-relaxed text-slate-600">
+            El suelo radiante es la solución definitiva para quienes buscan eficiencia y estética. Al trabajar a baja
+            temperatura, es el sistema que mejor cuida de tu salud y de tu bolsillo.
+          </p>
+
+          <div className="mt-7 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+            <h3 className="text-base font-extrabold text-slate-900">Qué ganarás con nosotros</h3>
+            <ul className="mt-4 space-y-3 text-sm text-slate-700">
+              <li className="flex gap-2">
+                <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                Confort total: calor uniforme en toda la casa, sin zonas frías ni corrientes de aire.
+              </li>
+              <li className="flex gap-2">
+                <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                Ahorro real en la factura: hasta un 30 por ciento más eficiente que los radiadores convencionales.
+              </li>
+              <li className="flex gap-2">
+                <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                Estética limpia: gana metros útiles en tu vivienda. Sin radiadores en las paredes.
+              </li>
+              <li className="flex gap-2">
+                <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                Hogar saludable: no levanta polvo ni reseca el ambiente. Ideal para personas con alergias o problemas
+                respiratorios.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
+            Por qué elegir a T&V Servicios y Complementos
+          </h2>
+          <p className="mt-4 text-pretty text-sm leading-relaxed text-slate-600">
+            A diferencia de un instalador tradicional, en T&V aportamos un perfil informático y técnico que garantiza que tu
+            instalación sea inteligente desde el primer día.
+          </p>
+
+          <div className="mt-7 grid gap-5">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="text-base font-extrabold text-slate-900">Instalación llave en mano</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                Nos ocupamos de todo: desde el cálculo térmico inicial hasta la puesta en marcha final en tu vivienda o negocio.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="text-base font-extrabold text-slate-900">Especialistas en aerotermia</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                Si buscas el equipo perfecto, combinamos tu suelo con aerotermia para calefacción en invierno y suelo
+                refrescante en verano.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="text-base font-extrabold text-slate-900">Control inteligente propio</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                Integramos el sistema con Home Assistant. Así puedes encender la calefacción de camino a casa, crear horarios por
+                habitaciones o dejar que el sistema baje la potencia si detecta que no hay nadie.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="text-base font-extrabold text-slate-900">Optimización solar</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                Si tienes placas solares, configuramos tu suelo para que aproveche los excedentes de energía del sol, convirtiendo
+                el suelo de tu casa en una batería térmica.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="bg-slate-50">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+        <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
+          <div>
+            <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">¿Tienes un proyecto en mente?</h2>
+            <p className="mt-4 text-pretty text-sm leading-relaxed text-slate-600">
+              Ya sea una obra nueva, una reforma integral en Madrid o si quieres mejorar el sistema que ya tienes, en T&V Servicios y
+              Complementos te damos la solución técnica que otros no saben ejecutar.
+            </p>
+
+            <div className="mt-7 rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="text-base font-extrabold text-slate-900">Qué hacemos</h3>
+              <ul className="mt-4 space-y-3 text-sm text-slate-700">
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Instalación de suelo radiante y refrescante.
+                </li>
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Sustitución de termostatos antiguos por control digital.
+                </li>
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Equilibrado y mantenimiento de circuitos.
+                </li>
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Sistemas para viviendas, oficinas y locales comerciales.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div id="faq">
+            <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">Preguntas frecuentes</h2>
+            <div className="mt-5 grid gap-4">
+              <details className="rounded-2xl border border-slate-200 bg-white p-5">
+                <summary className="cursor-pointer font-semibold text-slate-900">¿Se puede poner en una reforma?</summary>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                  Sí. Existen sistemas de bajo perfil que permiten instalarlo sin tener que subir mucho la altura del suelo.
+                </p>
+              </details>
+              <details className="rounded-2xl border border-slate-200 bg-white p-5">
+                <summary className="cursor-pointer font-semibold text-slate-900">¿Sirve para el verano?</summary>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                  Absolutamente. Con una bomba de calor aerotérmica, hacemos circular agua fría para refrescar la casa sin el
+                  chorro de aire de un split.
+                </p>
+              </details>
+              <details className="rounded-2xl border border-slate-200 bg-white p-5">
+                <summary className="cursor-pointer font-semibold text-slate-900">¿Cuánto se tarda en instalar?</summary>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">
+                  Depende de los metros. Somos un equipo ágil coordinado para cumplir los plazos de tu obra.
+                </p>
+              </details>
+            </div>
+
+            <div className="mt-8">
+              <a
+                href="/solicitar-presupuesto"
+                className="inline-flex w-full items-center justify-center rounded-full bg-[var(--color-brand-orange-600)] px-6 py-3 text-sm font-extrabold text-white shadow-sm hover:bg-[var(--color-brand-orange-500)] sm:w-auto"
+              >
+                SOLICITAR PRESUPUESTO GRATUITO
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 w-full rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+          <h2 className="text-2xl font-extrabold tracking-tight text-slate-900">
+            Suelo radiante con inercia y baja inercia: explicación y ventajas
+          </h2>
+          <p className="mt-4 text-pretty text-sm leading-relaxed text-slate-600">
+            El suelo radiante trabaja con agua a baja temperatura y distribuye el calor o el frío de forma uniforme.
+            La diferencia entre sistemas de <span className="font-semibold">alta inercia</span> y <span className="font-semibold">baja inercia</span>
+            está en la respuesta térmica del conjunto: cuánto tarda en reaccionar a los cambios de demanda.
+          </p>
+
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <h3 className="text-lg font-extrabold tracking-tight text-slate-900">Baja inercia</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                Sistemas más finos y pensados para responder con rapidez a las variaciones de consigna. Son especialmente
+                adecuados cuando quieres minimizar obra y cuando el uso de la vivienda u oficina es variable.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Respuesta más rápida ante cambios de demanda.
+                </li>
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Mejor encaje en reformas por limitaciones de altura.
+                </li>
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Confort estable con control avanzado y hábitos variables.
+                </li>
+              </ul>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <h3 className="text-lg font-extrabold tracking-tight text-slate-900">Alta inercia</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                Sistemas orientados a una regulación más estable cuando la demanda es más continua. Tienden a suavizar
+                las oscilaciones y favorecen una sensación de confort mantenido.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-slate-700">
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Comportamiento térmico más estable ante demandas constantes.
+                </li>
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Confort uniforme durante periodos de uso prolongado.
+                </li>
+                <li className="flex gap-2">
+                  <span aria-hidden="true" className="mt-1 size-2 rounded-full bg-[var(--color-brand-blue-700)]" />
+                  Buena base para sistemas de climatización completos (calor y refrigeración).
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="mt-6 text-xs text-slate-500">
+            Ambos tipos funcionan también para frío: en verano se circula agua fría para absorber calor del interior, con una
+            distribución más saludable y sin corrientes de aire.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  );
+}
